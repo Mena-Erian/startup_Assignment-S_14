@@ -39,9 +39,32 @@ h1 {
     padding-bottom: 10px;
 }
 
-/* --- Exercise 1: Colorful Button on Hover --- */
+/* --- Exercise 2: Colorful Button on Hover --- */
+.qseudo-ex {
+    position: relative;
+}
+.qseudo-ex::after {
+    content: "";
+    width: 30%;
+    height: 3px;
+    background-color: blue;
+    position: absolute;
+    top: 45%;
+    right: 0;
+}
+.qseudo-ex::before {
+    content: "";
+    width: 30%;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    top: 45%;
+    left: 0;
+}
+
+/* --- Exercise 2: Colorful Button on Hover --- */
 .color-button {
-    background-color: #f6ad55; /* Soft Orange */
+    background-color: tomato; /* Soft Orange */
     color: white;
     padding: 15px 30px;
     border: none;
@@ -52,7 +75,7 @@ h1 {
 }
 
 .color-button:hover {
-    background-color: #ed8936; /* Darker Orange on hover */
+    background-color: yellowgreen; /* Darker Orange on hover */
     color: #fff; /* Ensure text stays white */
 }
 
